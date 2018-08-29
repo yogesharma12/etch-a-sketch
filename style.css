@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+body {
+	background-color: #b54a51;
+}
+
+header {
+	margin: 40px 0 25px 0;
+}
+
+footer {
+	margin: 50px 0 10px 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 55px;
+}
+
+p {
+	font-size: 10px;
+	text-align: center;
+}
+
+#flex-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#outer-border {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	height: 660px;
+	width: 660px;
+	max-width: 100%;
+	max-height: 100%
+	margin: 0 auto;
+	background-color: #cec4c4;
+}
+
+#grid-container {
+	background-color: white;
+	border: 1px solid rgba(0,0,0,0.3);
+	height: 600px;
+	width: 600px;
+	margin: 0 auto;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+#button-container {
+	display: flex;
+	justify-content: center;
+	margin: 15px 0;
+}
+
+#rainbow {
+	background-color: #ff433d;
+}
+
+button {
+	border: none;
+	box-shadow: 1px 1px 2px black;
+	font-size: 20px;
+	border-radius: 2px;
+	background-color: #71ba5e;
+	padding: 8px 15px;
+	display: block;
+	margin: 0 10px;
+}
+
+button:hover {
+	transition: .3s;
+	background-color: #5fa04e;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.square {
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,0.3);
+	float: left;
+	vertical-align: top;
+	background-color: white;
+}
+
+@media screen and (max-width: 660px) {
+  	#outer-border {
+		height: 330px;
+		width: 330px;
+	}
+
+	#grid-container {
+		height: 300px;
+		width: 300px;
+	}
+}
